@@ -1,0 +1,48 @@
+<template name="main">
+  <h1>Todos</h1>
+  {{>navigation}}
+  {{>characters}}
+  {{>yield}}
+  <hr />
+  <p>Copyright &copy; Todos, 2014-2015.</p>
+</template>
+
+<template name="navigation">
+  <ul>
+    <li><a href="{{pathFor route='home'}}">Home</a></li>
+    <li><a href="{{pathFor route='login'}}">Login</a></li>
+    <li><a href="{{pathFor route='register'}}">Register</a></li>
+  </ul>
+</template>
+
+<template name="home">
+  <h2>Welcome to the stuff page</h2>
+</template>
+
+<template name="register">
+  <h2>Register</h2>
+</template>
+
+<template name="login">
+  <h2>Login</h2>
+</template>
+
+<template name="characters">
+  {{>addChar}}
+  <ul>
+    {{#each char}}
+      <li><a href="/chars/{{_id}}">{{name}}</a></li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="addChar">
+<form> Create new Character:
+  <input type="text" placeholder="Name" name="listName"/>
+</form>
+</template>
+
+<template name="character">
+  <h2>{{name}}</h2>
+</template>
+
