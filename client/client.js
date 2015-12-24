@@ -34,11 +34,11 @@ Template.body.helpers({
    }
  });
 
- Template.task.helpers({
-   isOwner: function(){
-              return this.owner == Meteor.userId();
-            }
- });
+Template.task.helpers({
+  isOwner: function(){
+             return this.owner == Meteor.userId();
+           }
+});
 
 Template.task.events({
   "click .toggle-checked": function () {
