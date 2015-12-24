@@ -1,0 +1,14 @@
+users: (u_id), namn, username, password
+
+character: (char_id), background, tot_hp, folkslag, religion, land, ort, Ålder, kön, längd, vikt, förflyttning, vapenhand, raud, fp, kunnighet, besvärjelsekonst,religion, rörlighet, skötsel, strid, vildmarksvana, [färdigheter], [utrustning],[Förmågor]
+
+chars_karaktarsdrag: (uk_id), [char_id], [k_id]
+
+karaktarsdrag: (k_id),namn, nivå, effekter
+
+Färdigheter: (f_id), nivå, kostnad, beskrivning, kortbeskrivning
+
+Förmågor: (spell_id),nivå, cost, framaning, beskrivning
+
+items: (item_id), namn, beskrivning, vikt, typ, skada, PV, SV, VH, andra egenskaper
+

@@ -1,0 +1,45 @@
+{
+  _id:1,
+  name:"char"
+  background:"långrandig beskrivning",
+  total_hp: int,
+  general_information:{
+    race:"mittländare",
+    country:"mittland",
+    ort:"X",
+    age: 20,
+    sex: "Man",
+    height: 175,
+    weight: 80
+    weaponhand: "r",
+  }
+  movement: 10,
+  raud:4,
+  experience:300,
+
+  characteristics:{
+    strength:{level:2, mod:{key:'str_sit',value:"2"}}
+    perception:{}
+    physique:{}
+    intelligence:{}
+    charisma:{}
+    agility:{}
+    
+  }
+
+  religion:{
+    baselevel:7,
+    perks:{
+      perk_1:{
+        id:'perk_id',
+        lvl:3
+      }
+    }
+  },
+  kunnighet{},
+  besvärjelsekonst{},
+  rörlighet{},
+  skötsel{},
+  strid{},
+  vildmarksvana{}
+}
