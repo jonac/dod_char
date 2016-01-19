@@ -18,6 +18,28 @@ Template.characters.helpers({
   }
  });
 
+Template.register.events({
+  'submit form': function(event){
+    event.preventDefault();
+    var email = $('[name=email]').val();
+    var password = $('[name=password]').val();
+    Accounts.createUser({
+      email:email,
+      password:password
+    });
+    Console.log(Meteor.users.find().fetch())
+    // router.go('home')
+  }
+});
+
+Template.login.events({
+  'submit form': function(){
+    event.preventDefault();
+    var email = $('[name=email]').val();
+    var password = $('[name=password]').val();
+    
+  }
+})
 // This code only runs on the client
 // Template.body.helpers({
 //   tasks: function () {

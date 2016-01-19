@@ -3,7 +3,10 @@ Meteor.methods({
              Characters.insert({
                name:text
              });
-           }
+           },
+  deleteChar: function(task_id){
+                Characters.remove(task_id);
+              }
 });
 // Meteor.methods({
 //   addTask: function(text){
